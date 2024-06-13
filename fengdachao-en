@@ -1,0 +1,194 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{russell}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+
+
+
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+ %	BIBLIOGRAPHY
+ %-------------------------------------------------------------------------------
+\addbibresource{cv/references.bib}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Dachao Feng}} & Email : {dcfeng07@gmail.com} \\
+   & Mobile : +86 13311071079 \\
+\end{tabular*}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+
+\cvsection{Personal Profile}
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvparagraph}
+
+%---------------------------------------------------------
+1. As software engineer I have 17 years development experience in IT
+industry across front-end and back-end.
+2. I have 8 years front-end experience and working as back-end developer for 9 years. Product tech stack include React, Vue, typescript and Asp.net python Java NodeJS SQL.
+3. I hold my bachelor of software major in Heilongjiang University.I still
+learning new technology like ML and AI. Base on my work
+experience and education background my career objective will focus
+on developing.
+\end{cvparagraph}
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Bachelor of Software engineering} % Degree
+    {University of Heilongjiang} % Institution
+    {Haerbin, China} % Location
+    {Sept 2003 - 2007} % Date(s)
+    {
+        \begin{cvitems}
+        \end{cvitems}
+    }
+%---------------------------------------------------------
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+% SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+%-------------------------------------------------------------------------------
+% CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Senior Software Engineer} % Job title
+    {Everbridge - Beijing} % Organisation
+    {Beijing, China} % Location
+    {Jul 2021 - Jul 2024} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {As a member of a scrume team, I am response for EBS front-end developing work using react, typescript, jest for unit test, webdriver IO for UI automation.}
+        \item {Charge for front-end microservice release, familiar with aws, terraform, k8s, gitlab pipeline, genkins}
+        \item {Construct unit  testing framework on front-end microservice, enhancement gitlab pipeline}
+        \item {Support to solve prod issue in front-end side}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Frontend leader}
+    {Zhilian Zhaopin}
+    {Beijing, China}
+    {May 2020 - Jul 2021}
+    {
+        \begin{cvitems}
+            \item {Handle work assignment to team member and daily management of team}
+            \item {Web/mobile client feature design discussion and development work and product release}
+            \item {Support to solve customer's online problem}
+            \item {Working with Vue, webpack, flutter, weex}
+        \end{cvitems}
+    }
+
+    \cventry
+      {Technic Lead}
+      {Synchronoss}
+      {Beijing, China and Bangalor India}
+      {Jun 2017 - Jan 2020}
+      {
+        \begin{cvitems}
+            \item { Relocate India for nearly one year, it was amazing experience to meet people in different culture and glad to work with Inida colleague.}
+            \item {Engaging on web mail client development. Team work with other
+            engineers. }
+            \item {Using React Redux Webpack Angular framework also jest for testing.}
+            \item {Working on frontend optimization by using gzip on prod bundle and split chunk}
+        \end{cvitems}
+      }
+
+    \cventry
+      {Software engineer}
+      {Skyware Tec}
+      {Beijing, China}
+      {Jun 2010 - Jun 2017}
+      {
+        \begin{cvitems}
+            \item {Responsible for website development using Asp.net Flex and Sqlserver.}
+            \item {Handle on data from TCP protocal, store in memory cache and database}
+            \item {Maintaining system and support to solve prod problem}
+        \end{cvitems}
+      }
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Skills}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvskills}
+
+%---------------------------------------------------------
+  \cvskill
+    {Programming} % Category
+    { HTML/CSS, JavaScript, Python, C# Java, NodeJS(expressjs), SQL} % Skills
+
+\end{cvskills}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+
+
+\cvsection{Interests}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {Soccer, sport} % Interest
+    {I played soccer when I was child and I keep this hobby until now. I also loving many kinds activity like cycling running TT} % Description
+
+\end{cvskills}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
